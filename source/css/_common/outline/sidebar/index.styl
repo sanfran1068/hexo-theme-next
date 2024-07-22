@@ -18,7 +18,9 @@
   }
 
   .sidebar {
-    background: $black-deep;
+    background-color: $black-deep;
+    background-image: linear-gradient(90deg, rgba(85, 75, 139, 0.5) 10%, rgba(0, 0, 0, 0) 10%), linear-gradient(rgba(85, 75, 139, 0.5) 10%, rgba(0, 0, 0, 0) 10%);
+    background-size: 20px 20px;
     bottom: 0;
     if (not hexo-config('back2top.sidebar')) {
       box-shadow: inset 0 2px 6px black;
@@ -110,7 +112,6 @@
 
 .sidebar-inner {
   color: $grey-dark;
-  padding: $sidebar-padding 10px;
   text-align: center;
   flex-column();
 }
